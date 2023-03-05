@@ -23,7 +23,10 @@ jobs:
       - name: Clone Flutter 
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.7.5'
+          channel: 'stable'
+          cache: true
+          cache-key: 'flutter-:os:-:channel:-:version:-:arch:-:hash:' # optional, change this to force refresh cache
+          architecture: x64 # optional, x64 or arm64
       - run: flutter doctor -v
 
       # Checkout code
