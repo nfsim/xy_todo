@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:xy_todo/generated/l10n.dart';
 
 class TaskListScreen extends StatefulWidget {
   const TaskListScreen({Key? key}) : super(key: key);
@@ -12,7 +13,7 @@ class _TaskListState extends State<TaskListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Task lists"),
+        title: Text(S.of(context).s_taskLists),
       ),
       body: Container(),
     );
