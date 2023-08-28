@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:xy_todo/src/features/task/models/task.dart';
+import 'package:xy_todo/src/features/task_list/models/task_list_model.dart';
 import 'package:xy_todo/src/features/task_list/screens/task_list_screen.dart';
 import 'generated/l10n.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -19,7 +21,12 @@ class XYTodoApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: const TaskListScreen(),
+      home: TaskListScreen(
+        tasks: Tasks(TasksState.loaded, [
+          Task(false, "Task00"),
+          Task(false, "Task01"),
+        ]),
+      ),
       debugShowCheckedModeBanner: false,
       localizationsDelegates: const [
         S.delegate,
