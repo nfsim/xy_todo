@@ -19,7 +19,12 @@ class XYTodoApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: const TaskListScreen(),
+      home: TaskListScreen(
+        tasks: Tasks(TasksState.loaded, [
+          Task.create(false, "Task00"),
+          Task.create(false, "Task01"),
+        ]),
+      ),
       debugShowCheckedModeBanner: false,
       localizationsDelegates: const [
         S.delegate,
