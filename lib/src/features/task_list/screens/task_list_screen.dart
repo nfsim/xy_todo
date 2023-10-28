@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:xy_todo/generated/l10n.dart';
 
 class TaskListScreen extends StatefulWidget {
-  const TaskListScreen({Key? key}) : super(key: key);
+  const TaskListScreen({Key? key, required tasks}) : super(key: key);
 
   @override
   State<TaskListScreen> createState() => _TaskListState();

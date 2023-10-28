@@ -1,4 +1,7 @@
+// Package imports:
 import 'package:equatable/equatable.dart';
+
+// Project imports:
 import 'package:xy_todo/src/features/task/models/task.dart';
 
 /// The list of task.

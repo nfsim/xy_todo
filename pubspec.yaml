@@ -53,6 +53,7 @@ dev_dependencies:
   danger_core: ^1.0.1
   build_runner: ^2.4.6
   json_serializable: ^6.7.1
+  import_sorter: ^4.6.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

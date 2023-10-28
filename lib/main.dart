@@ -1,7 +1,14 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:flutter_localizations/flutter_localizations.dart';
+
+// Project imports:
+import 'package:xy_todo/src/features/task/models/task.dart';
+import 'package:xy_todo/src/features/task_list/models/task_list_model.dart';
 import 'package:xy_todo/src/features/task_list/screens/task_list_screen.dart';
 import 'generated/l10n.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(const XYTodoApp());
